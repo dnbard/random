@@ -1,0 +1,7 @@
+# Weapons
+
+- The %ITEM_TYPE%
+- %ADJECTIVE% %ITEM_TYPE%
+- %NAME%'s %ADJECTIVE% %ITEM_TYPE%
+- %ITEM_TYPE% of the %NAME%
+- %UNIQUE%, the %ADJECTIVE% %ITEM_TYPE%
