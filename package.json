@@ -1,0 +1,22 @@
+{
+    "name": "random-loot",
+    "version": "0.0.1",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://dnbard:james3it@github.com/dnbard/random-loot.git"
+    },
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/dnbard/random-loot/issues"
+    },
+    "homepage": "https://github.com/dnbard/random-loot#readme",
+    "devDependencies": {
+        "nightwatch": "^0.8.4"
+    }
+}
