@@ -32,6 +32,12 @@ _.each(config, function(c){
                             ImagesFS.save(_.template('../items/<%= topic %>-images.js')({topic: topic}), data);
                         });
                     });
+                }).elements('css selector', '.clickable .listview-cleartext', function(result){
+                    result.value.forEach(function(el){
+                        browser.elementIdText(el.ELEMENT, function(result){
+                            console.log(result.value);
+                        });
+                    });
                 }).end();
             }
         })(cursor, c.name);
