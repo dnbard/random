@@ -8,17 +8,17 @@ requireDir('./gulp');
 function watchAndRecompile() {
     gulp.watch('./src/**/*', ['browserify']);
     gulp.watch(['./public/index.html', './index.js', './images/*'], ['through']);
-    gulp.watch('./sass/**/*', ['less']);
+    gulp.watch('./sass/**/*', ['sass']);
 }
 
-gulp.task('watch', ['browserify', 'through', 'less'], watchAndRecompile);
-gulp.task('build', ['browserify', 'through', 'less'], function () {
+gulp.task('watch', ['browserify', 'through', 'sass'], watchAndRecompile);
+gulp.task('build', ['browserify', 'through', 'sass'], function () {
     console.log('Build completed');
 });
 
 var webserver = require('gulp-webserver');
 
-gulp.task('default', ['browserify', 'through', 'less'], function () {
+gulp.task('default', ['browserify', 'through', 'sass'], function () {
     gulp.src('./compile')
         .pipe(webserver({}));
 });
