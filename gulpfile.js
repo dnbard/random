@@ -1,5 +1,3 @@
-//TODO: change LESS to libSASS
-
 var gulp = require('gulp');
 var requireDir = require('require-dir');
 
@@ -18,7 +16,7 @@ gulp.task('build', ['browserify', 'through', 'sass'], function () {
 
 var webserver = require('gulp-webserver');
 
-gulp.task('default', ['browserify', 'through', 'sass'], function () {
+gulp.task('default', ['browserify', 'through', 'sass', 'watch'], function () {
     gulp.src('./compile')
         .pipe(webserver({}));
 });

@@ -10,7 +10,7 @@ function onStreamError(err) {
 
 gulp.task('browserify', function () {
     var bundler = browserify({
-        entries: ['./src/components/main.js'],
+        entries: ['./src/app.js'],
         transform: [reactify]
     });
     return bundler.bundle()
