@@ -4,19 +4,19 @@ var requireDir = require('require-dir');
 requireDir('./gulp');
 
 function watchAndRecompile() {
-    gulp.watch('./src/**/*', ['browserify']);
+    gulp.watch('./src/**/*', ['webpack']);
     gulp.watch(['./public/index.html', './index.js', './images/*'], ['through']);
     gulp.watch('./sass/**/*', ['sass']);
 }
 
-gulp.task('watch', ['browserify', 'through', 'sass'], watchAndRecompile);
-gulp.task('build', ['browserify', 'through', 'sass'], function () {
+gulp.task('watch', ['webpack', 'through', 'sass'], watchAndRecompile);
+gulp.task('build', ['webpack', 'through', 'sass'], function () {
     console.log('Build completed');
 });
 
 var webserver = require('gulp-webserver');
 
-gulp.task('default', ['browserify', 'through', 'sass', 'watch'], function () {
+gulp.task('default', ['webpack', 'through', 'sass', 'watch'], function () {
     gulp.src('./compile')
         .pipe(webserver({}));
 });
