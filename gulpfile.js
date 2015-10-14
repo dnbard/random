@@ -6,7 +6,7 @@ requireDir('./gulp');
 function watchAndRecompile() {
     gulp.watch('./src/**/*', ['webpack']);
     gulp.watch(['./public/index.html', './index.js', './images/*'], ['through']);
-    gulp.watch('./sass/**/*', ['sass']);
+    gulp.watch('./sass/*.scss', ['sass']);
 }
 
 gulp.task('watch', ['webpack', 'through', 'sass'], watchAndRecompile);

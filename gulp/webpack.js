@@ -13,6 +13,11 @@ gulp.task("webpack", function (callback) {
             path: __dirname,
             filename: "../compile/app.js"
         },
+        resolve: {
+            root: '../',
+            extensions: ['', '.js'],
+            modulesDirectories: ['node_modules', 'src']
+        },
         module: {
             loaders: [{
                 test: /\.css$/,
