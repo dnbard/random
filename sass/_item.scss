@@ -1,0 +1,39 @@
+.item{
+    background-color: #080E1E;
+    border: 1px solid #3F424A;
+    border-radius: 5px;
+    box-shadow: 0 0 1px white, inset 0 0 30px black;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 20px;
+
+    .item-icon{
+        background: url(http://wow.zamimg.com/images/wow/icons/large/inv_sword_1h_pvpdraenors2_d_01.jpg) no-repeat 0px 0;
+        width: 65px;
+        height: 56px;
+        border: 1px solid #3F424A;
+        border-radius: 5px;
+        box-shadow: 0 0 3px white, inset 0 0 3px black;
+    }
+
+    .item-detail{
+        width: 100%;
+        padding: 0 0 0 20px;
+        line-height: 1.1;
+    }
+
+    .item-name{
+        font-size: 16pt;
+        color: #a335ee;
+    }
+
+    .item-gold{
+        color: #ffd100;
+    }
+
+    .item-cols{
+        display: flex;
+        justify-content: space-between;
+    }
+}

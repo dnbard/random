@@ -1,0 +1,63 @@
+.player{
+    background: #080E1E;
+    border: 1px solid #3F424A;
+    border-radius: 5px;
+    box-shadow: 0 0 1px white, inset 0 0 30px black;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 10px 0;
+    transition: 0.25s ease-out background;
+    cursor: pointer;
+
+    &:hover{
+        background: #4577B1;
+        box-shadow: 0 0 1px white;
+    }
+
+    .player-icon{
+        background: url(http://wow.zamimg.com/images/wow/icons/large/race_draenei_female.jpg) no-repeat 0 0;
+        width: 90px;
+        height: 56px;
+        border: 1px solid #3F424A;
+        border-radius: 5px;
+        box-shadow: 0 0 3px white, inset 0 0 3px black;
+    }
+
+    .player-class{
+        background: url(http://wow.zamimg.com/images/wow/icons/large/class_warrior.jpg) no-repeat 0 0;
+        width: 90px;
+        height: 56px;
+        border: 1px solid #3F424A;
+        border-radius: 5px;
+        box-shadow: 0 0 3px white, inset 0 0 3px black;
+        margin-left: 10px;
+    }
+
+    .player-spec{
+        background: url(http://wow.zamimg.com/images/wow/icons/large/ability_warrior_defensivestance.jpg) no-repeat 0 0;
+        width: 90px;
+        height: 56px;
+        border: 1px solid #3F424A;
+        border-radius: 5px;
+        box-shadow: 0 0 3px white, inset 0 0 3px black;
+        margin-left: 10px;
+    }
+
+    .player-detail{
+        width: 100%;
+        padding: 0 0 0 20px;
+        line-height: 1.1;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .player-name{
+        font-size: 16pt;
+        color: #a335ee;
+        text-shadow: 1px 1px 2px black;
+    }
+}
